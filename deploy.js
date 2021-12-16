@@ -18,6 +18,6 @@ const deploy = async () => {
     })
     .send({ gas: "1000000", from: accounts[0] });
   console.log("contract deployed to", result.options.address);
-  provider.enginea.stop();
+  provider.engine.stop();
 };
 deploy();
